@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-color: #ffffff;
+  --text-color: #333333;
+  --primary-color: #303f9f;
+}
+
+.dark {
+  --bg-color: #333333;
+  --text-color: #ffffff;
+}
+
+.app-container {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+.content-container {
+  width: 100%;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr;
+  margin-top: 5em;
+}
+
+.workout-chart {
+  width: 100%;
+  height: 300px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+}
+
+.secondary-container {
+  display: grid;
+  gap: 20px;
+}
+
+@media (min-width: 768px) {
+  .content-container {
+    grid-template-columns: 1fr;
+  }
+
+  .secondary-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .secondary-container > div {
+    flex: 1;
+  }
+}

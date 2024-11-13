@@ -1,0 +1,19 @@
+.actions-container {
+  display: flex;
+  gap: 1rem;
+}
+
+.action-btn {
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--primary-color);
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.action-btn:hover {
+  background-color: var(--primary-color);
+}

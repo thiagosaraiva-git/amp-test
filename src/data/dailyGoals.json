@@ -1,0 +1,6 @@
+[
+  { "id": 1, "task": "10,000 steps", "completed": false },
+  { "id": 2, "task": "Drink 2L water", "completed": false },
+  { "id": 3, "task": "Read 30 minutes", "completed": false },
+  { "id": 4, "task": "Sleep 8 hours", "completed": false }
+]
