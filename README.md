@@ -1,50 +1,34 @@
-# React + TypeScript + Vite
+# Amp App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a fitness tracking app designed to monitor workout progress and track daily goals. The app features an interactive chart to display workout progress, a daily goals checklist, and quick action buttons. The user interface is responsive and offers both light and dark themes.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Workout Progress Chart**: Displays a weekly workout progress chart using Chart.js.
+- **Daily Goals Checklist**: Displays a checklist of daily goals with checkboxes, such as "Walk 10,000 steps", "Drink 2L of water", etc.
+- **Quick Action Buttons**: Includes buttons like "Start Workout" and "View Progress" with smooth animations.
+- **Dark Mode**: Toggle between light and dark themes for an optimized visual experience.
+- **Responsive Layout**: The layout adapts between small screen (mobile) and large screen (desktop) views.
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **React**: JavaScript library for building the user interface.
+- **TypeScript**: A superset of JavaScript that adds static typing to the code.
+- **Chart.js**: Library for creating interactive charts.
+- **CSS Grid**: Used for the responsive layout.
+- **CSS Variables**: For managing colors and themes centrally.
+- **Framer Motion**: For smooth animations on buttons and transitions.
+- **Vite**: Fast bundling and development tool for React.
+- **Prettier**: Code formatting tool to ensure consistent code style across the project.
 
-- Configure the top-level `parserOptions` property like this:
+## Running the Project with Yarn
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-});
-```
+### Requirements
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+- Node.js (v18.18 or higher)
+- Yarn (Install via [Yarn's guide](https://classic.yarnpkg.com/en/docs/install/))
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react';
+### Steps
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-});
-```
+1. Clone the repository
+2. Run yarn dev
